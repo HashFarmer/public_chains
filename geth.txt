@@ -1,3 +1,5 @@
+# geth 的各种配置节点服务商需要深入研究的内容
+
 
 1：
 安装geth
@@ -17,6 +19,9 @@ geth
 --password password.txt    #可重复使用的账户、密码
 --ws    # websocket方式的rpc服务
 --http    # http方式的rpc服务
+--miner.etherbase    #设置接受奖励的地址
+
+
 
 
 
