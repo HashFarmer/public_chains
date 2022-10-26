@@ -1,21 +1,32 @@
 
 1：
 安装geth
-
-
+# https://geth.ethereum.org/docs/install-and-build/installing-geth
 
 
 
 2：
 启动geth
+# geth是怎么找到网络上别的节点呢？
 
 
+# 开启某些服务，开启某些功能
 geth 
 --dev   #开发模式
 --datadir dev-chain    #block chain数据永久储存目录
 --password password.txt    #可重复使用的账户、密码
+--ws    # websocket方式的rpc服务
+--http    # http方式的rpc服务
 
 
 
-geth attach   #启动一个geth console, 以http://127.0.0.1:8545为服务器后端
+geth attach   #启动一个geth console, 以http://127.0.0.1:8545为服务器后端，geth console就是一个前端
               #geth console中使用的命令与 curl中使用的命令格式不一样
+              #The purpose of Geth’s Javascript console is 
+              #to provide a built-in environment 
+              #to use a subset of the Web3.js libraries 
+              #to interact with a Geth node.
+              #geth console与json-rpc api 与 web3.js的关系
+              
+              
+总结：与一个geth node交互的方式两大类：1、curl ， 2、geth (javascript)console
