@@ -1,0 +1,21 @@
+
+1：
+安装geth
+
+
+
+
+
+2：
+启动geth
+
+
+geth 
+--dev   #开发模式
+--datadir dev-chain    #block chain数据永久储存目录
+--password password.txt    #可重复使用的账户、密码
+
+
+
+geth attach   #启动一个geth console, 以http://127.0.0.1:8545为服务器后端
+              #geth console中使用的命令与 curl中使用的命令格式不一样
