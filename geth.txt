@@ -30,3 +30,5 @@ geth attach   #启动一个geth console, 以http://127.0.0.1:8545为服务器后
               
               
 总结：与一个geth node交互的方式两大类：1、curl ， 2、geth (javascript)console
+
+geth attach https://goerli.infura.io/v3/{api_key} 失败，可能这个远程节点没有开启console这个服务
